@@ -1,0 +1,241 @@
+/*==================fonts===================*/
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;     
+}
+
+h1{
+    font-size: 80px;                                  /*size of font*/
+    font-family: 'STIX Two Text';
+}
+
+h2{
+    font-size: 40px;
+    font-family: 'Gill Sans';
+}
+
+nav{
+    font-size: 20px;
+}
+
+p{
+    font-size: 20px;
+}
+
+
+/*==================Border===================*/
+
+/*#about{
+    
+        border: crimson;                             border colour
+        border-radius: 5px;                          size of border
+        border-style: solid;                          texture of border
+}*/
+
+/*==================Cleaning===================*/
+
+label{
+    display: none;                                   /*display how element is shown, types of display*/
+}
+.gridimg{                                               /*. is a class*/
+    width: 230px;                                        /*size of div*/
+    height: 30vh;                                   
+    padding: 10px;                                       /*inside spacing*/
+}
+
+.photo{
+    width: auto;
+    height: 30vh;
+}
+
+.content{
+    
+    margin-left: 30vw;                               /*outside spacing*/
+}
+
+section{
+    height: 100vh;                                   /*vh is viewport height*/
+    width: 65vw;                                      /*vw view port width*/
+    margin-left: 20px;
+}
+
+/*==================Navbar===================*/
+
+.sidebar{
+    text-align: center;                                  /*alignment of where text is*/
+    position: fixed;                                     /*how it is position, 5 positions*/
+    top: 0;                                                  /*position to the top of screen or viewport*/
+    height: 100vh;
+    width: 30vw;
+    background-color: #B7A9BA;                           /*colour of background*/
+
+    
+}
+
+/*==================Home===================*/
+
+.largeimg{
+    margin-top: 30px;
+    width: auto;
+    height: 90vh;
+    
+}
+#home{
+    margin-left: 20px;
+    text-align: center;
+    
+ 
+}
+
+
+/*==================Gallery===================*/
+#gallery{
+    display: flex;
+    flex-wrap: wrap;                                         /*how the flex is arranged, directtion*/
+    flex-direction: column;                                             
+   align-content: center;
+    
+}
+
+
+/*==================About===================*/
+.photographers{
+    display: flex;
+    justify-content: center;
+
+}
+.photo{
+    padding:0px 80px 80px 80px;
+}
+
+.para{
+    
+    width: 50vw;
+    
+}
+#about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*==================Contact===================*/
+
+/*==================hover===================*/
+
+/*.gridimg{
+    opacity: .5;                                              hover feature is not shown, due to affecting the layering in 360px media.
+    transition: 1s;
+    position: relative;
+}
+
+.gridimg:hover{
+    opacity: 2;
+}
+*/
+
+
+/*==================media===================*/
+
+@media screen  and (max-width: 360px) {
+   .content{
+    margin-left: 0;
+    padding: 0;
+    display: inline-block;
+    overflow-x: auto;                                        /*controls content or sizing when big*/
+    overflow-y: auto;
+   }
+
+   
+   
+    .wrapper{
+    width: 360px;
+    height: auto;
+    
+   }
+  
+   section{
+    height: 1000px;
+
+   }
+/*==================nav===================*/
+   label{
+    display: block;
+   }
+
+   nav li{
+    display: none;
+   }
+
+   nav input:checked ~ li{
+    display: block;
+   }
+   
+    .sidebar{
+        text-align: center;
+        position: sticky;
+        top: 0;
+        width: 340px;
+       height: auto;
+        
+    }
+/*==================home===================*/
+    .largeimg{
+        width: 340px;
+        height: auto;
+        
+      
+    }
+
+    #home{
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+/*==================Gallery===================*/
+    #gallery{
+        width: 100vw;
+        height: 100vh;
+        display: inline-block;
+        
+    }
+
+    .gridimg{
+        width: 300px;
+        height: auto;
+        
+    }
+
+    /*.gridimg{ 
+    opacity: 1;
+    pointer-events: none;
+    }*/
+
+/*==================about===================*/
+    .para{
+        width: auto;
+        height: auto;
+        justify-content:center ;
+    }
+
+
+
+    #about{
+        justify-content: center;
+        
+    }
+
+  p{
+    font-size: 15px;
+  }
+
+    .photographers{
+        display: inline-block;
+        justify-content: center ;
+    }
+
+    
+  
+
+}
